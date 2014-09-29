@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  <!-- jquery and plugin-related stylesheets -->
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Home -->
+<header>
+    <h1>Score Calculator</h1>
+</header>
+<div data-role="page" id="page1">
+    <!-- Percent Loader -->
+    <div id="top">
+    <div class="sex">
+      <span class="sub-title">Sex</span>
+      <span class="sex-denominator">Male</span>
+    </div>
+    <div id="apft-score" class="score">
+      <span>Score</span>
+      180
+      <span>Pass</span>
+    </div>
+    <div class="age">
+      <span class="age-number">30</span>
+      <span class="sub-title">years old</span>
+    </div>
+    </div>  
+    <!-- End Percent Loader -->       
+    <div data-role="content">
+        <div class="slider-container" data-role="fieldcontain">
+            <div class="event-title">Push-Ups</div>
+            <input id="pushups" name="slider" value="0" min="0" max="77" data-highlight="true" type="range">
+            <div class="sub-title">Reps</div>
+        </div>
+        <div  class="slider-container" data-role="fieldcontain">
+            <div class="event-title">Sit-Ups</div>
+            <input id="situps" name="slider" value="0" min="0" max="82" data-highlight="true" type="range">
+            <div class="sub-title">Reps</div>
+        </div>
+        <div class="aerobic-container">
+        <div class="event-title">2-Mile Run</div>
+        <div class="time">
+            <input name="minute-tens" id="minute-tens" placeholder="1" value="">
+        </div>
+        <div class="time">
+            <input name="minute-ones" id="minute-ones" placeholder="5" value="">
+        </div>
+        <div class="time">
+            <span class="colon">:</span>
+        </div>
+        <div class="time">
+            <input name="seconds-tens" id="seconds-tens" placeholder="3" value="">
+        </div>
+        <div class="time">
+            <input name="seconds-ones" id="seconds-ones" placeholder="0" value="">
+        </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery and jQuery Mobile -->
+<script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+<script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<!-- Percentage Loader Plugin -->    
+<script src="libs/jquery.percentageloader-0.1.js"></script>
+<!-- Application classes -->
+<script src="js/pushups.js"></script>
+<script src="js/apft.js"></script>
+<script src="actions.js"></script>
+</body>
+</html>
