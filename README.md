@@ -1,4 +1,4 @@
-APFT - Army Physical Fitness Test Score Calculator
+APFT - Army Physical Fitness Test Score Calculator © Copyright 2014 Roberto Osorio. All Rights Reserved.
 
 ============================================================================================================
 
